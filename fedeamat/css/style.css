@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.content {
+    margin: 2em;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    margin: 0;
+    margin-top: auto;
+    padding: 3px;
+
+    background-color: #ccc;
+
+
+    text-align: center;
+}
+
+.titlepage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card {
+    max-width: 50rem;
+}
+
+.card-body {
+    background-color: #f4f4f4;
+}
+
+.ringraziamenti > p{
+    font-style: italic;
+}
+
+.math--display {
+    display: block;
+    overflow-x: scroll;
+}
