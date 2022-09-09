@@ -6,6 +6,7 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .main {
@@ -17,6 +18,8 @@ body {
 .content {
     margin: 2em;
     margin-bottom: 2rem;
+    max-width: 44rem;
+    text-align: justify;
 }
 
 .footer {
@@ -30,19 +33,10 @@ body {
     text-align: center;
 }
 
-.titlepage {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
 .card {
-    max-width: 50rem;
+    max-width: 35rem;
 }
 
-.card-body {
-    background-color: #f4f4f4;
-}
 
 .ringraziamenti > p{
     font-style: italic;

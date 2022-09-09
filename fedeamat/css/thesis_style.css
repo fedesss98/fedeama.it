@@ -7,6 +7,30 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
+.scuola {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+}
+
+.header {
+  max-width: 800px;
+}
+
+.indice {
+  max-width: 800px;
+}
+
+.content {
+  max-width: 800px;
+  text-align: justify;
+}
+
 .header-gif {
+  width: 100%;
   max-width: 40em;
+  margin: auto;
+}
+
+.csl-entry {
+  margin-bottom: .7rem;
 }
