@@ -23,20 +23,18 @@ body {
 }
 
 .footer {
-    margin: 0;
+    padding: 1em;
     margin-top: auto;
-    padding: 3px;
-
     background-color: #ccc;
-
-
     text-align: center;
 }
 
-.card {
-    max-width: 35rem;
+.footer__socials {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
 }
-
 
 .ringraziamenti > p{
     font-style: italic;

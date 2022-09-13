@@ -4,11 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script
-			src="https://kit.fontawesome.com/914519b6cd.js"
-			crossorigin="anonymous"
-		></script>
+		<!-- FontAwesome -->
+		<script src="https://kit.fontawesome.com/914519b6cd.js" crossorigin="anonymous"></script>
 		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<!-- MathJax -->
 		<script
 			id="MathJax-script"
 			async
@@ -39,22 +38,6 @@
 		<link rel="stylesheet" href="css/thesis_style.css" />
 	</head>
 	<body>
-		<!-- MathJax TeX definitions -->
-		\( \newcommand{\opa}{\hat{a}} \newcommand{\opadag}{\hat{a}^\dagger}
-		\newcommand{\opb}{\hat{b}} \newcommand{\opbdag}{\hat{b}^\dagger}
-		\newcommand{\opV}[1][n]{\hat{V}_{#1}} \newcommand{\opU}[1][n]{\hat{U}_{#1}}
-		\newcommand{\ops}[2]{\hat{\sigma}_#1^#2}
-		\newcommand{\opsup}[1]{\dyad{e}{g#1}} \newcommand{\opsdwn}[1]{\dyad{g#1}{e}}
-		\newcommand{\deltarho}[1][n+1]{\frac{\Delta\rho_{#1}}{\Delta t}}
-		\newcommand{\delt}{\Delta t}
-		\newcommand{\dissipator}[1][n]{\mathcal{D}_S[\rho_{#1}]}
-		\newcommand{\ga}{\gamma_\alpha} \newcommand{\gb}{\gamma_\beta}
-		\renewcommand{\acomm}[2]{\left[ #1, #2 \right]_+ }
-		\newcommand{\q}[1][]{\hat{q}_#1} \newcommand{\p}[1][]{\hat{p}_#1}
-		\newcommand{\abs}[1]{\left| #1 \right|} \newcommand{\Tr}{\text{Tr}}
-		\newcommand{\comm}[2]{\left[ #1 , #2 \right]}
-		\newcommand{\ev}[1]{\left\langle #1 \right\rangle} \newcommand{\mqty}[1]{
-		\begin{matrix} #1 \end{matrix} } \)
 		<div class="container-md mx-auto my-5 text-center header">
 				<div class="container mb-5 logo">
 					<img
@@ -78,30 +61,42 @@
 					RELATORE <br/> <strong>G. MASSIMO PALMA <br/>SALVATORE LORENZO</strong>
 				</p>
 		</div>
-		<div class="container-md mx-auto mb-4 fs-5 chapter indice">
-			<h1 class="chapter__title" id="indice">Indice dei Contenuti</h1>
-			<ul class="indice__list">
-				<li class="indice__list__item item1">
-					<a href="#introduzione">Introduzione</a>
-				</li>
-				<li class="indice__list__item item2">
-					<a href="">1. Singola Cavità immersa nel Fasonio</a>
-				</li>
-				<li class="indice__list__item item3">
-					<a href="">2. Evoluzione Completa del Sistema</a>
-				</li>
-				<li class="indice__list__item item4">
-					<a href="">3. Due Sistemi a Cascata nel Fasonio</a>
-				</li>
-				<li class="indice__list__item item5">
-					<a href="#conclusioni">Conclusioni</a>
-				</li>
-				<li class="indice__list__item item6">
-					<a href="#ringraziamenti">Ringraziamenti</a>
-				</li>
-			</ul>
-		</div>
 		<div class="container-lg mx-auto mb-3 content">
+			<div class="container-md mx-auto">
+				<p style="font-style: italic;">Questo è solo un riassunto tradotto in italiano della tesi.
+					<br>
+					La tesi completa (in inglese) in PDF è disponibile <a href="https://drive.google.com/file/d/11S5vxLp4oxXUBQXiigZ7t1xEVyrJtOQc/view?usp=sharing">presso questo link</a>.
+					<br>
+					Potete trovare invece la versione PDF di questo riassunto <a href="https://drive.google.com/file/d/1ce4fRYlLq8BeC1N7n7mQ2wSDT9yG2ZfQ/view?usp=sharing">a questo link</a>.
+				</p>
+			</div>
+			<div class="container-md mx-auto pb-4 mb-4 fs-5 chapter indice">
+				<h1 class="chapter__title" id="indice">Indice dei Contenuti</h1>
+				<ul class="indice__list">
+					<li class="indice__list__item item1">
+						<a href="#introduzione">Introduzione</a>
+					</li>
+					<li class="indice__list__item item2">
+						<a href="">1. Singola Cavità immersa nel Fasonio</a>
+					</li>
+					<li class="indice__list__item item3">
+						<a href="">2. Evoluzione Completa del Sistema</a>
+					</li>
+					<li class="indice__list__item item4">
+						<a href="">3. Due Sistemi a Cascata nel Fasonio</a>
+					</li>
+					<li class="indice__list__item item5">
+						<a href="#conclusioni">Conclusioni</a>
+					</li>
+					<li class="indice__list__item item6">
+						<a href="#ringraziamenti">Ringraziamenti</a>
+					</li>
+				</ul>
+			</div>
+			<!-- MathJax TeX definitions -->
+			\(\newcommand{\ev}[1]{\left\langle #1 \right\rangle} 
+			\newcommand{\mqty}[1]{
+			\begin{matrix} #1 \end{matrix} } \)
 			<div class="container mt-4 px-4 chapter introduzione">
 				<h1 class="chapter__title" id="introduzione">Introduzione</h1>
 				<p>
@@ -135,7 +130,7 @@
 					Questi atomi termici con la loro fase di coerenza mostrano un indice di rifrazione migliorato per risonanza, senza assorbimento (Scully e Zubairy, <a class="citation" href="#ref-SCULLY1997">1997</a>).
 					Possono per questo essere visti come un nuovo stato della materia, chiamato fasonio proprio per l’importanza che ha la fase di coerenza nel determinare le sue proprietà.
 				</p>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card--figure text-bg-light mx-auto">
 					<img
 						class="card-img-top"
 						src="images/phaseonium.png"
@@ -191,7 +186,7 @@
 						>Figura 2</a
 					>.
 				</p>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card--figure text-bg-light mx-auto">
 					<img
 						class="card-img-top"
 						src="images/cascading_systems.svg"
@@ -225,7 +220,7 @@
 					Cercheremo di mostrare meno algebra possibile, trattenendo solo i risultati importanti nella discussione e relegando i calcoli più tediosi nelle Appendici.
 				</p>
 			</div>
-			<div class="container mt-4 chapter risultati">
+			<div class="container mt-4 px-4 chapter risultati">
 				<h1 class="chapter__title" id="risultati">Risultati</h1>
 				<p>Presentiamo qui una breve lista dei risultati ottenuti.</p>
 				<h2 class="section" id="singola-cavità-immersa-nel-fasonio">
@@ -242,15 +237,15 @@
 					Per prima cosa, usando un Modello Collisionale per il campo di cavità immerso nel fasonio, si ottiene la Master Equation che descrive la dinamica aperta del sistema. 
 					Questa è data dalla formula:
 				</p>
-					<div class="card my-4">
+					<div class="card my-4 card--equation">
 						<h5 class="card-header">Master Equation per un Campo di Cavità immerso nel Fasonio</h5>
 						<div class="card-body">
 							<p class="card-text">
 								<span class="math--display"
 									>\[ \begin{split}
 									\frac{\Delta\rho_{n+1}}{\Delta t} = (\hbar\Omega)^2\Delta t &\Big(
-									\ga(\hat{a}^\dagger \rho_{n} \hat{a} -\tfrac{1}{2}\acomm{\hat{a}\hat{a}^\dagger}{\rho_{n}}) \\
-									&+ \gb(\hat{a} \rho_{n} \hat{a}^\dagger -\tfrac{1}{2}\acomm{\hat{a}^\dagger\hat{a}}{\rho_{n}})\Big)
+									\gamma_\alpha(\hat{a}^\dagger \rho_{n} \hat{a} -\tfrac{1}{2}\left[\hat{a}\hat{a}^\dagger, \rho_{n}\right]_+) \\
+									&+ \gamma_\beta(\hat{a} \rho_{n} \hat{a}^\dagger -\tfrac{1}{2}\left[\hat{a}^\dagger\hat{a}, \rho_{n}\right]_+)\Big)
 												\end{split}
 									\]</span
 								>
@@ -284,29 +279,29 @@
 					<li>
 						<p>
 							<span class="math--inline"
-								>\(\gamma_\alpha = 2\abs{\alpha}^2\)</span
-							>, dove <span class="math--inline">\(\abs{\alpha}^2\)</span> è la
+								>\(\gamma_\alpha = 2\left|\alpha\right|^2\)</span
+							>, dove <span class="math--inline">\(\left|\alpha\right|^2\)</span> è la
 							popolazione dello stato eccitato dell’ancella;
 						</p>
 					</li>
 					<li>
 						<p>
 							<span class="math--inline"
-								>\(\gamma_\beta = \abs{\beta}^2(1+\cos\phi)\)</span
-							>, dove <span class="math--inline">\(\abs{\beta}^2\)</span> è la
+								>\(\gamma_\beta = \left|\beta\right|^2(1+\cos\phi)\)</span
+							>, dove <span class="math--inline">\(\left|\beta\right|^2\)</span> è la
 							popolazione degli stati ground dell’ancella;
 						</p>
 					</li>
 					<li>
 						<p>
-							<span class="math--inline">\(\opadag\)</span> e
-							<span class="math--inline">\(\opa\)</span> sono gli Operatori di
+							<span class="math--inline">\(\hat{a}^\dagger\)</span> e
+							<span class="math--inline">\(\hat{a}\)</span> sono gli Operatori di
 							Creazione e Annichilazione di un fotone nella cavità;
 						</p>
 					</li>
 					<li>
 						<p>
-							<span class="math--inline">\(\comm{\cdots}{\cdots}_+\)</span> è
+							<span class="math--inline">\(\left[\cdots, \cdots\right]_+\)</span> è
 							l’anticommutatore tra due Operatori.
 						</p>
 					</li>
@@ -375,7 +370,7 @@
 					come questo rapporto converga allo stesso valore per diversi stati di
 					partenza della cavità.
 				</p>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card-figure text-bg-light mx-auto">
 					<img
 						class="card-img-top"
 						src="images/fixed_point_mixing.png"
@@ -401,7 +396,7 @@
 							stesso valore fissato e smettono di evolvere. Questo valore limite
 							è uguale a
 							<span class="math--inline"
-								>\(2\abs{\alpha}^2 / (\abs{\beta}^2(1+\cos{\phi}))\)</span
+								>\(2\left|\alpha\right|^2 / (\left|\beta\right|^2(1+\cos{\phi}))\)</span
 							>, dove <span class="math--inline">\(\alpha\)</span>,
 							<span class="math--inline">\(\beta\)</span> e
 							<span class="math--inline">\(\phi\)</span> sono i parametri dello
@@ -436,7 +431,7 @@
 					Da questo si ricava la Mappa Collisionale che regola l’evoluzione
 					della cavità:<br />
 				</p>
-				<div class="card my-4">
+				<div class="card card--equation my-4">
 					<h5 class="card-header">Mappa Collisionale Completa Cavità-Fasonio</h5>
 					<div class="card-body">
 						<p class="card-text">
@@ -472,13 +467,13 @@
 					Operatore densità <span class="math--inline">\(\rho\)</span> a causa
 					dell’entanglement tra i due. Al primo sistema stavolta apparterrano
 					gli operatori di creazione e annichilazione
-					<span class="math--inline">\(\opadag\)</span> e
-					<span class="math--inline">\(\opa\)</span>, mentre quelli del secondo
-					saranno <span class="math--inline">\(\opbdag\)</span> e
-					<span class="math--inline">\(\opb\)</span>. Si ottiene così la Master
+					<span class="math--inline">\(\hat{a}^\dagger\)</span> e
+					<span class="math--inline">\(\hat{a}\)</span>, mentre quelli del secondo
+					saranno <span class="math--inline">\(\hat{b}^\dagger\)</span> e
+					<span class="math--inline">\(\hat{b}\)</span>. Si ottiene così la Master
 					Equation a cascata:<br />
 				</p>
-				<div class="card">
+				<div class=" card--equation">
 					<h5 class="card-header">Master Equation di due Cavità a Cascata</h5>
 					<div class="card-body">
 						<p class="card-text">
@@ -486,7 +481,7 @@
 								>\[ \label{eq:cascade_meq} \begin{split}
 								\frac{\Delta\rho_{n+1}}{\Delta t}= \frac{(\hbar\Omega)^2\Delta
 								t}{4} & \Big( \frac{\gamma_\alpha-\gamma_\beta}{2}\left(
-								\comm{\hat{a}^\dagger\hat{b} - \hat{a}\hat{b}^\dagger}{\rho_n}
+								\left[\hat{a}^\dagger\hat{b} - \hat{a}\hat{b}^\dagger, \rho_n\right]
 								\right)\\ & +
 								\gamma_\alpha\left((\hat{a}^\dagger+\hat{b}^\dagger) \rho_n
 								(\hat{a} + \hat{b}) -\tfrac{1}{2}\left[
@@ -528,10 +523,10 @@
 						\ev{\hat{q}_1^2} &
 						\ev{\frac{\hat{q}_1\hat{p}_1+\hat{p}_1\hat{q}_1}{2}} \\[10pt]
 						\ev{\frac{\hat{p}_1\hat{q}_1+\hat{q}_1\hat{p}_1}{2}} &
-						\ev{\hat{p}_1^2} } & \mqty{ \ev{\q[1]\q[2]} & \ev{\p[1]\q[2]}
-						\\[10pt] \ev{\q[1]\p[2]} & \ev{\p[1]\p[2]} } \\[10pt] \hline \mqty{
-						\ev{\q[1]\q[2]} & \ev{\p[1]\q[2]} \\[10pt] \ev{\q[1]\p[2]} &
-						\ev{\p[1]\p[2]} } & \mqty{ \ev{\hat{q}_2^2} &
+						\ev{\hat{p}_1^2} } & \mqty{ \ev{\hat{q}_1\hat{q}_2} & \ev{\hat{p}_1\hat{q}_2}
+						\\[10pt] \ev{\hat{q}_1\hat{p}_2} & \ev{\hat{p}_1\hat{p}_2} } \\[10pt] \hline \mqty{
+						\ev{\hat{q}_1\hat{q}_2} & \ev{\hat{p}_1\hat{q}_2} \\[10pt] \ev{\hat{q}_1\hat{p}_2} &
+						\ev{\hat{p}_1\hat{p}_2} } & \mqty{ \ev{\hat{q}_2^2} &
 						\ev{\frac{\hat{q}_2\hat{p}_2+\hat{p}_2\hat{q}_2}{2}} \\[10pt]
 						\ev{\frac{\hat{p}_2\hat{q}_2+\hat{q}_2\hat{p}_2}{2}} &
 						\ev{\hat{p}_2^2} } \end{array} \end{pmatrix} \]</span
@@ -542,7 +537,7 @@
 					equazione del moto per la matrice covarianza, che si può porre nella
 					forma:<br />
 				</p>
-				<div class="card my-4">
+				<div class="card card--equation my-4">
 					<h5 class="card-header">Equazione del Moto della Matrice di Covarianza</h5>
 					<div class="card-body">
 						<p class="card-text">
@@ -605,7 +600,7 @@
 					rappresentiamo questa evoluzione per due diversi stati di partenza del
 					sistema a cascata: uno stato termico e uno stato di vuoto.
 				</p>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card--figure text-bg-light mx-auto">
 					<img
 						src="images/covariance_thermal.gif"
 						class="card-img-top"
@@ -622,7 +617,7 @@
 						</p>
 					</div>
 				</figure>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card--figure text-bg-light mx-auto">
 					<img
 						src="images/covariance_vacuum.gif"
 						class="card-img-top"
@@ -675,7 +670,7 @@
 						>Figura 7</a
 					>.
 				</p>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card--figure text-bg-light mx-auto">
 					<img
 						src="images/entanglement_thermal.png"
 						class="card-img-top"
@@ -692,7 +687,7 @@
 						</p>
 					</div>
 				</figure>
-				<figure class="card text-bg-light mx-auto">
+				<figure class="card card--figure text-bg-light mx-auto">
 					<img
 						src="images/entanglement_vacuum.png"
 						class="card-img-top"
@@ -723,7 +718,7 @@
 					da solo la sua evoluzione fino al raggiungimento della sua stabilità.
 				</p>
 			</div>
-			<div class="container mt-4 chapter conclusioni">
+			<div class="container mt-4 px-4 chapter conclusioni">
 				<h1 class="chapter__title" id="conclusioni">Conclusioni</h1>
 				<p>
 					In questa tesi sono state discusse alcune delle proprietà di un
@@ -830,7 +825,7 @@
 				</p>
 				<p class="my-4">-</p>
 			</div>
-			<div class="container mt-4 chapter ringraziamenti">
+			<div class="container mt-4 px-4 chapter ringraziamenti">
 				<h1 class="chapter__title" id="ringraziamenti">Ringraziamenti</h1>
 				<p>
 					Mentre il tempo per finire questa tesi si esaurisce, il primo
@@ -892,7 +887,7 @@
 					tutta questa lunga dissertazione teorica su un sistema quantistico.
 				</p>
 			</div>
-			<div class="container mt-4 chapter bibliografia">
+			<div class="container mt-4 px-4 chapter bibliografia">
 				<h1 class="chapter__title" id="bibliografia">Bibliografia</h1>
 					<ul class="biblio-list">
 						<li
@@ -912,7 +907,7 @@
 						<li id="ref-entropy_ineq" class="csl-entry" role="doc-biblioentry">
 							Araki, Huzihiro, and Elliott H. Lieb. 1970.
 							<span>“Entropy Inequalities.”</span>
-							<em>Communications in Mathematical Physics</em> 18 (2): 160–70.
+							<em>Communications in Mathematical Physics</em> 18 (2): 160&#8211;70.
 							<a href="https://doi.org/10.1007/BF01646092"
 								>https://doi.org/10.1007/BF01646092</a
 							>.
@@ -943,7 +938,7 @@
 						<li id="ref-CahillGlauber" class="csl-entry" role="doc-biblioentry">
 							Cahill, K. E., and R. J. Glauber. 1969.
 							<span>“Ordered Expansions in Boson Amplitude Operators.”</span>
-							<em>Phys. Rev.</em> 177 (January): 1857–81.
+							<em>Phys. Rev.</em> 177 (January): 1857&#8211;81.
 							<a href="https://doi.org/10.1103/PhysRev.177.1857"
 								>https://doi.org/10.1103/PhysRev.177.1857</a
 							>.
@@ -965,7 +960,7 @@
 								>“Quantum Collision Models: Open System Dynamics from Repeated
 								Interactions.”</span
 							>
-							<em>Physics Reports</em> 954: 1–70. https://doi.org/<a
+							<em>Physics Reports</em> 954: 1&#8211;70. https://doi.org/<a
 								href="https://doi.org/10.1016/j.physrep.2022.01.001"
 								>https://doi.org/10.1016/j.physrep.2022.01.001</a
 							>.
@@ -1008,7 +1003,7 @@
 						<li id="ref-Englert_2002" class="csl-entry" role="doc-biblioentry">
 							Englert, Berthold-Georg, and Giovanna Morigi. 2002.
 							<span>“Five Lectures on Dissipative Master Equations.”</span> In
-							<em>Coherent Evolution in Noisy Environments</em>, 55–106. Springer
+							<em>Coherent Evolution in Noisy Environments</em>, 55&#8211;106. Springer
 							Berlin Heidelberg.
 							<a href="https://doi.org/10.1007/3-540-45855-7\_2"
 								>https://doi.org/10.1007/3-540-45855-7\_2</a
@@ -1020,7 +1015,7 @@
 								>“Description of States in Quantum Mechanics by Density Matrix and
 								Operator Techniques.”</span
 							>
-							<em>Rev. Mod. Phys.</em> 29 (January): 74–93.
+							<em>Rev. Mod. Phys.</em> 29 (January): 74&#8211;93.
 							<a href="https://doi.org/10.1103/RevModPhys.29.74"
 								>https://doi.org/10.1103/RevModPhys.29.74</a
 							>.
@@ -1045,7 +1040,7 @@
 								>“Quantum and Semiclassical Steady States of a Kicked Cavity
 								Mode.”</span
 							>
-							<em>J. Opt. Soc. Am. B</em> 3 (6): 906–10.
+							<em>J. Opt. Soc. Am. B</em> 3 (6): 906&#8211;10.
 							<a href="https://doi.org/10.1364/JOSAB.3.000906"
 								>https://doi.org/10.1364/JOSAB.3.000906</a
 							>.
@@ -1056,7 +1051,7 @@
 							role="doc-biblioentry"
 						>
 							———. 1986b. <span>“Theory of a Microscopic Maser.”</span>
-							<em>Phys. Rev. A</em> 34 (October): 3077–87.
+							<em>Phys. Rev. A</em> 34 (October): 3077&#8211;87.
 							<a href="https://doi.org/10.1103/PhysRevA.34.3077"
 								>https://doi.org/10.1103/PhysRevA.34.3077</a
 							>.
@@ -1070,7 +1065,7 @@
 							<span
 								>“Strong NP-Hardness of the Quantum Separability Problem.”</span
 							>
-							<em>Quantum Info. Comput.</em> 10 (3): 343–60.
+							<em>Quantum Info. Comput.</em> 10 (3): 343&#8211;60.
 						</li>
 						<li
 							id="ref-GaussianDiscord1"
@@ -1117,7 +1112,7 @@
 							Henderson, L, and V Vedral. 2001.
 							<span>“Classical, Quantum and Total Correlations.”</span>
 							<em>Journal of Physics A: Mathematical and General</em> 34 (35):
-							6899–6905.
+							6899&#8211;6905.
 							<a href="https://doi.org/10.1088/0305-4470/34/35/315"
 								>https://doi.org/10.1088/0305-4470/34/35/315</a
 							>.
@@ -1140,7 +1135,7 @@
 								>“General Teleportation Channel, Singlet Fraction, and
 								Quasidistillation.”</span
 							>
-							<em>Phys. Rev. A</em> 60 (September): 1888–98.
+							<em>Phys. Rev. A</em> 60 (September): 1888&#8211;98.
 							<a href="https://doi.org/10.1103/PhysRevA.60.1888"
 								>https://doi.org/10.1103/PhysRevA.60.1888</a
 							>.
@@ -1155,7 +1150,7 @@
 								>“When Is the Wigner Quasi-Probability Density
 								Non-Negative?”</span
 							>
-							<em>Reports on Mathematical Physics</em> 6 (2): 249–52.
+							<em>Reports on Mathematical Physics</em> 6 (2): 249&#8211;52.
 							https://doi.org/<a
 								href="https://doi.org/10.1016/0034-4877(74)90007-X"
 								>https://doi.org/10.1016/0034-4877(74)90007-X</a
@@ -1168,7 +1163,7 @@
 								Non-Classicality.”</span
 							>
 							<em>Journal of Optics B: Quantum and Semiclassical Optics</em> 6
-							(10): 396–404.
+							(10): 396&#8211;404.
 							<a href="https://doi.org/10.1088/1464-4266/6/10/003"
 								>https://doi.org/10.1088/1464-4266/6/10/003</a
 							>.
@@ -1180,7 +1175,7 @@
 						>
 							Kirkpatrick, K. A. 2006.
 							<span>“The Schr<span>ö</span>dinger-HJW Theorem.”</span>
-							<em>Foundations of Physics Letters</em> 19 (1): 95–102.
+							<em>Foundations of Physics Letters</em> 19 (1): 95&#8211;102.
 							<a href="https://doi.org/10.1007/s10702-006-1852-1"
 								>https://doi.org/10.1007/s10702-006-1852-1</a
 							>.
@@ -1199,7 +1194,7 @@
 							Landau, Lev Davidovich. 1965.
 							<span>“2 - the Damping Problem in Wave Mechanics.”</span> In
 							<em>Collected Papers of l.d. Landau</em>, edited by D. TER HAAR,
-							8–18. Pergamon. https://doi.org/<a
+							8&#8211;18. Pergamon. https://doi.org/<a
 								href="https://doi.org/10.1016/B978-0-08-010586-4.50007-9"
 								>https://doi.org/10.1016/B978-0-08-010586-4.50007-9</a
 							>.
@@ -1223,7 +1218,7 @@
 						>
 							Lütkenhaus, N., and Stephen M. Barnett. 1995.
 							<span>“Nonclassical Effects in Phase Space.”</span>
-							<em>Phys. Rev. A</em> 51 (April): 3340–42.
+							<em>Phys. Rev. A</em> 51 (April): 3340&#8211;42.
 							<a href="https://doi.org/10.1103/PhysRevA.51.3340"
 								>https://doi.org/10.1103/PhysRevA.51.3340</a
 							>.
@@ -1242,7 +1237,7 @@
 								>Nachrichten von Der Gesellschaft Der Wissenschaften Zu Göttingen,
 								Mathematisch-Physikalische Klasse</em
 							>
-							1927: 245–72.
+							1927: 245&#8211;72.
 							<a href="http://eudml.org/doc/59230">http://eudml.org/doc/59230</a>.
 						</li>
 						<li id="ref-Nielsen_Chuang" class="csl-entry" role="doc-biblioentry">
@@ -1276,7 +1271,7 @@
 								>“Relaxation Phenomena in Spin and Harmonic Oscillator
 								Systems.”</span
 							>
-							<em>Phys. Rev.</em> 129 (February): 1880–88.
+							<em>Phys. Rev.</em> 129 (February): 1880&#8211;88.
 							<a href="https://doi.org/10.1103/PhysRev.129.1880"
 								>https://doi.org/10.1103/PhysRev.129.1880</a
 							>.
@@ -1307,14 +1302,14 @@
 								>“Die Gegenw<span>ä</span>rtige Situation in Der
 								Quantenmechanik.”</span
 							>
-							<em>Naturwissenschaften</em> 23 (48): 807–12.
+							<em>Naturwissenschaften</em> 23 (48): 807&#8211;12.
 							<a href="https://doi.org/10.1007/BF01491891"
 								>https://doi.org/10.1007/BF01491891</a
 							>.
 						</li>
 						<li id="ref-Schumacher" class="csl-entry" role="doc-biblioentry">
 							Schumacher, Benjamin. 1995. <span>“Quantum Coding.”</span>
-							<em>Phys. Rev. A</em> 51 (April): 2738–47.
+							<em>Phys. Rev. A</em> 51 (April): 2738&#8211;47.
 							<a href="https://doi.org/10.1103/PhysRevA.51.2738"
 								>https://doi.org/10.1103/PhysRevA.51.2738</a
 							>.
@@ -1333,7 +1328,7 @@
 								>“Extracting Work from a Single Heat Bath via Vanishing Quantum
 								Coherence.”</span
 							>
-							<em>Science</em> 299 (5608): 862–64.
+							<em>Science</em> 299 (5608): 862&#8211;64.
 							<a href="https://doi.org/10.1126/science.1078955"
 								>https://doi.org/10.1126/science.1078955</a
 							>.
@@ -1355,7 +1350,7 @@
 								Gaussian States.”</span
 							>
 							<em>Journal of Physics B: Atomic, Molecular and Optical Physics</em>
-							37 (2): L21–28.
+							37 (2): L21&#8211;28.
 							<a href="https://doi.org/10.1088/0953-4075/37/2/l02"
 								>https://doi.org/10.1088/0953-4075/37/2/l02</a
 							>.
@@ -1367,7 +1362,7 @@
 						>
 							Shaji, Anil, and E. C. G. Sudarshan. 2005.
 							<span>“Who’s Afraid of Not Completely Positive Maps?”</span>
-							<em>Physics Letters A</em> 341 (1): 48–54. https://doi.org/<a
+							<em>Physics Letters A</em> 341 (1): 48&#8211;54. https://doi.org/<a
 								href="https://doi.org/10.1016/j.physleta.2005.04.029"
 								>https://doi.org/10.1016/j.physleta.2005.04.029</a
 							>.
@@ -1375,7 +1370,7 @@
 						<li id="ref-ShannonEntropy" class="csl-entry" role="doc-biblioentry">
 							Shannon, C. E. 1948.
 							<span>“A Mathematical Theory of Communication.”</span>
-							<em>The Bell System Technical Journal</em> 27 (3): 379–423.
+							<em>The Bell System Technical Journal</em> 27 (3): 379&#8211;423.
 							<a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x"
 								>https://doi.org/10.1002/j.1538-7305.1948.tb01338.x</a
 							>.
@@ -1386,7 +1381,7 @@
 								>“Quantum-Noise Matrix for Multimode Systems: U(n) Invariance,
 								Squeezing, and Normal Forms.”</span
 							>
-							<em>Phys. Rev. A</em> 49 (March): 1567–83.
+							<em>Phys. Rev. A</em> 49 (March): 1567&#8211;83.
 							<a href="https://doi.org/10.1103/PhysRevA.49.1567"
 								>https://doi.org/10.1103/PhysRevA.49.1567</a
 							>.
@@ -1402,14 +1397,14 @@
 								Schrödinger’s "Cat Paradox" Paper.”</span
 							>
 							<em>Proceedings of the American Philosophical Society</em> 124 (5):
-							323–38.
+							323&#8211;38.
 							<a href="http://www.jstor.org/stable/986572"
 								>http://www.jstor.org/stable/986572</a
 							>.
 						</li>
 						<li id="ref-Walls1983" class="csl-entry" role="doc-biblioentry">
 							Walls, D. F. 1983. <span>“Squeezed States of Light.”</span>
-							<em>Nature</em> 306 (5939): 141–46.
+							<em>Nature</em> 306 (5939): 141&#8211;46.
 							<a href="https://doi.org/10.1038/306141a0"
 								>https://doi.org/10.1038/306141a0</a
 							>.
@@ -1425,7 +1420,7 @@
 						<li id="ref-WangsnessBloch" class="csl-entry" role="doc-biblioentry">
 							Wangsness, R. K., and F. Bloch. 1953.
 							<span>“The Dynamical Theory of Nuclear Induction.”</span>
-							<em>Phys. Rev.</em> 89 (February): 728–39.
+							<em>Phys. Rev.</em> 89 (February): 728&#8211;39.
 							<a href="https://doi.org/10.1103/PhysRev.89.728"
 								>https://doi.org/10.1103/PhysRev.89.728</a
 							>.
@@ -1435,7 +1430,7 @@
 							<span
 								>“On the Quantum Correction for Thermodynamic Equilibrium.”</span
 							>
-							<em>Phys. Rev.</em> 40 (June): 749–59.
+							<em>Phys. Rev.</em> 40 (June): 749&#8211;59.
 							<a href="https://doi.org/10.1103/PhysRev.40.749"
 								>https://doi.org/10.1103/PhysRev.40.749</a
 							>.
@@ -1460,7 +1455,7 @@
 								>“On the Algebraic Problem Concerning the Normal Forms of Linear
 								Dynamical Systems.”</span
 							>
-							<em>American Journal of Mathematics</em> 58 (1): 141–63.
+							<em>American Journal of Mathematics</em> 58 (1): 141&#8211;63.
 							<a href="https://doi.org/10.2307/2371062"
 								>https://doi.org/10.2307/2371062</a
 							>.
@@ -1487,7 +1482,7 @@
 								Perspective.”</span
 							>
 							In <em>Quantum Communication, Computing, and Measurement 3</em>,
-							edited by Paolo Tombesi and Osamu Hirota, 115–25. Boston, MA:
+							edited by Paolo Tombesi and Osamu Hirota, 115&#8211;25. Boston, MA:
 							Springer US.
 							<a href="https://doi.org/10.1007/0-306-47114-0_17"
 								>https://doi.org/10.1007/0-306-47114-0_17</a
@@ -1501,7 +1496,7 @@
 							>
 							In
 							<em>Quantum Optics, Experimental Gravity, and Measurement Theory</em
-							>, edited by Pierre Meystre and Marlan O. Scully, 87–116. Boston,
+							>, edited by Pierre Meystre and Marlan O. Scully, 87&#8211;116. Boston,
 							MA: Springer US.
 							<a href="https://doi.org/10.1007/978-1-4613-3712-6_5"
 								>https://doi.org/10.1007/978-1-4613-3712-6_5</a
@@ -1514,13 +1509,13 @@
 			<p class="footer__rights">Federico Amato - all rights reserved.</p>
 			<div class="footer__socials">
 				<a href="www.instagram.com/fedeamat"
-					><i class="fa-brands fa-instagram fa-xl"></i
+					><i class="fab fa-brands fa-instagram fa-2x"></i
 				></a>
 				<a href="www.facebook.com"
-					><i class="fa-brands fa-facebook fa-xl"></i
+					><i class="fab fa-brands fa-facebook fa-2x"></i
 				></a>
 				<a href="www.linkedin.com"
-					><i class="fa-brands fa-linkedin fa-xl"></i
+					><i class="fab fa-brands fa-linkedin fa-2x"></i
 				></a>
 			</div>
 		</div>

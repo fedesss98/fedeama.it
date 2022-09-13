@@ -34,3 +34,7 @@ h1, h2, h3, h4, h5 {
 .csl-entry {
   margin-bottom: .7rem;
 }
+
+figure.card {
+  max-width: 35rem;
+}

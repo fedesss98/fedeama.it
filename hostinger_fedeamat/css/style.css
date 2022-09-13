@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.content {
+    margin: 2em;
+    margin-bottom: 2rem;
+    max-width: 44rem;
+    text-align: justify;
+}
+
+.footer {
+    padding: 1em;
+    margin-top: auto;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.footer__socials {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.ringraziamenti > p{
+    font-style: italic;
+}
+
+.math--display {
+    display: block;
+    overflow-x: scroll;
+}
