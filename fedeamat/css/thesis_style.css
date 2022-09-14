@@ -38,3 +38,9 @@ h1, h2, h3, h4, h5 {
 figure.card {
   max-width: 35rem;
 }
+
+.bibliografia a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+}
